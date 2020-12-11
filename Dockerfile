@@ -10,18 +10,7 @@ RUN \
 	logrotate \
 	nano \
 	nginx \
-	openssl \
-	php7 \
-	php7-fileinfo \
-	php7-fpm \
-	php7-json \
-	php7-mbstring \
-	php7-openssl \
-	php7-session \
-	php7-simplexml \
-	php7-xml \
-	php7-xmlwriter \
-	php7-zlib && \
+	openssl && \
  echo "**** configure nginx ****" && \
  echo 'fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;' >> \
 	/etc/nginx/fastcgi_params && \
